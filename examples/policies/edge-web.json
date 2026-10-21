@@ -1,0 +1,24 @@
+{
+  "name": "edge-web",
+  "summary": "Lite edge policy for the fictional Harbor & Pine lab. Scope and port only. Mail audit@example.com.",
+  "allow": [
+    {
+      "proto": "tcp",
+      "port": 22,
+      "scope": "loopback",
+      "note": "Admin SSH on loopback."
+    },
+    {
+      "proto": "tcp",
+      "port": 80,
+      "scope": "any",
+      "note": "Public HTTP."
+    },
+    {
+      "proto": "tcp",
+      "port": 443,
+      "scope": "any",
+      "note": "Public HTTPS."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "baseline-ssh-loopback",
+  "summary": "Lite starting policy. SSH may listen on loopback. Process names are ignored by the lite build.",
+  "allow": [
+    {
+      "proto": "tcp",
+      "port": 22,
+      "scope": "loopback",
+      "note": "Admin SSH on loopback. The full build can also compare the process string."
+    }
+  ]
+}
